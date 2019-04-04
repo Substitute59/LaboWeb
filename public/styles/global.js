@@ -51,6 +51,9 @@ class GlobalStyle extends React.Component {
         [role="button"].currentnav span {
           font-weight: 500;
         }
+        .${classes.skillko} img {
+          opacity: .5;
+        }
       `}</style>
     );
   }

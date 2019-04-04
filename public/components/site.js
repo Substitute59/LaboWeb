@@ -29,7 +29,7 @@ class Site extends React.Component {
 
   render() {
     const { classes, strapiUrl, lang } = this.props;
-    const { hp, domains, skills } = this.props.apiDatas;
+    const { hp, hobbies, domains, skills, projects, experiences, formations } = this.props.apiDatas;
 
     return (
       <div className={classes.root}>
@@ -72,11 +72,11 @@ class Site extends React.Component {
             </IconButton>
           </div>
           <Home classes={classes} hp={hp} strapiUrl={strapiUrl} />
-          <About classes={classes} hp={hp} />
+          <About classes={classes} hp={hp} hobbies={hobbies} />
           <Skills classes={classes} hp={hp} lang={lang} domains={domains} skills={skills} strapiUrl={strapiUrl} />
-          <Work classes={classes} hp={hp} lang={lang} />
-          <Experience classes={classes} hp={hp} lang={lang} />
-          <Education classes={classes} hp={hp} lang={lang} />
+          <Work classes={classes} hp={hp} lang={lang} projects={projects} />
+          <Experience classes={classes} hp={hp} lang={lang} experiences={experiences} strapiUrl={strapiUrl} />
+          <Education classes={classes} hp={hp} lang={lang} formations={formations} />
           <Contact classes={classes} hp={hp} lang={lang} />
         </main>
         <GlobalStyle classes={classes} />

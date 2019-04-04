@@ -143,6 +143,18 @@ const styles = theme => ({
   cardheader: {
     borderBottom: `1px solid ${grey[300]}`,
   },
+  cardfooter: {
+    fontSize: '.875rem',
+    padding: 12,
+    borderTop: `1px solid ${grey[300]}`,
+  },
+  xpimg: {
+    width: 75,
+  },
+  xpheader: {
+    display: 'flex',
+    justifyContent: 'space-between',
+  },
 });
 
 export default styles;

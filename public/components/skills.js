@@ -18,12 +18,13 @@ class Skills extends React.Component {
     const domainSkills = this.props.skills.filter(skill => {
       return skill.domaine._id == domain
     });
+    const { classes, strapiUrl } = this.state;
 
     return <Grid container spacing={16}>
       {domainSkills.map(skill => (
-        <Grid item xs={6} sm={4} md={3} lg={2} key={skill._id} className={skill.Acquis ? this.state.classes.skillok : this.state.classes.skillko}>
-          <img src={this.state.strapiUrl + skill.Logo.url} alt={skill.Titre} className={this.state.classes.skillimg} />
-          <div className={this.state.classes.skilltitle}>{skill.Titre}</div>
+        <Grid item xs={6} sm={4} md={3} lg={2} key={skill._id} className={skill.Acquis ? classes.skillok : classes.skillko}>
+          <img src={strapiUrl + skill.Logo.url} alt={skill.Titre} className={classes.skillimg} />
+          <div className={classes.skilltitle}>{skill.Titre}</div>
         </Grid>
       ))}
     </Grid>
