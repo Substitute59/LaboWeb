@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/loisirs",
+      "handler": "Loisir.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/loisirs/count",
+      "handler": "Loisir.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/loisirs/:_id",
+      "handler": "Loisir.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/loisirs",
+      "handler": "Loisir.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/loisirs/:_id",
+      "handler": "Loisir.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/loisirs/:_id",
+      "handler": "Loisir.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "domaine",
+  "info": {
+    "name": "domaine",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Titre": {
+      "default": "",
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "Titre anglais": {
+      "default": "",
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "competences": {
+      "collection": "competence",
+      "via": "domaine"
+    },
+    "Ordre": {
+      "default": "",
+      "type": "integer"
+    }
+  }
+}

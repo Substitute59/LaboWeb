@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/domaines",
+      "handler": "Domaine.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/domaines/count",
+      "handler": "Domaine.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/domaines/:_id",
+      "handler": "Domaine.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/domaines",
+      "handler": "Domaine.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/domaines/:_id",
+      "handler": "Domaine.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/domaines/:_id",
+      "handler": "Domaine.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

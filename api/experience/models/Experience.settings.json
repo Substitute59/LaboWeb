@@ -1,0 +1,57 @@
+{
+  "connection": "default",
+  "collectionName": "experience",
+  "info": {
+    "name": "experience",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Entreprise": {
+      "default": "",
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "Logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "Période": {
+      "default": "",
+      "type": "string"
+    },
+    "Période anglais": {
+      "default": "",
+      "type": "string"
+    },
+    "Poste": {
+      "default": "",
+      "type": "string"
+    },
+    "Poste anglais": {
+      "default": "",
+      "type": "string"
+    },
+    "Description": {
+      "default": "",
+      "type": "text"
+    },
+    "Description anglais": {
+      "default": "",
+      "type": "text"
+    },
+    "Lieu": {
+      "default": "",
+      "type": "string"
+    },
+    "Ordre": {
+      "default": "",
+      "type": "integer"
+    }
+  }
+}

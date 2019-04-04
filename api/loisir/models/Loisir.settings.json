@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "loisir",
+  "info": {
+    "name": "loisir",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Titre": {
+      "default": "",
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "Icone": {
+      "default": "",
+      "type": "string"
+    },
+    "Titre anglais": {
+      "default": "",
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "Ordre": {
+      "default": "",
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "connection": "default",
+  "collectionName": "formation",
+  "info": {
+    "name": "formation",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Titre": {
+      "default": "",
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "Titre anglais": {
+      "default": "",
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "Organisme": {
+      "default": "",
+      "type": "string"
+    },
+    "Lieu": {
+      "default": "",
+      "type": "string"
+    },
+    "Type": {
+      "default": "formation",
+      "type": "enumeration",
+      "enum": [
+        "formation",
+        " école"
+      ]
+    },
+    "Année": {
+      "default": "",
+      "type": "string"
+    },
+    "Ordre": {
+      "default": "",
+      "type": "integer"
+    }
+  }
+}

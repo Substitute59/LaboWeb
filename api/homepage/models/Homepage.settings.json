@@ -1,0 +1,89 @@
+{
+  "connection": "default",
+  "collectionName": "homepage",
+  "info": {
+    "name": "homepage",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Titre du site": {
+      "default": "",
+      "type": "text"
+    },
+    "Baseline": {
+      "default": "",
+      "type": "text"
+    },
+    "Titre à propos": {
+      "default": "",
+      "type": "string"
+    },
+    "Contenu à propos": {
+      "default": "",
+      "type": "text"
+    },
+    "Titre compétences": {
+      "default": "",
+      "type": "string"
+    },
+    "Titre projets": {
+      "default": "",
+      "type": "string"
+    },
+    "Titre expériences": {
+      "default": "",
+      "type": "string"
+    },
+    "Titre formations": {
+      "default": "",
+      "type": "string"
+    },
+    "Sous-titre formations": {
+      "default": "",
+      "type": "string"
+    },
+    "Titre contact": {
+      "default": "",
+      "type": "string"
+    },
+    "Email": {
+      "default": "",
+      "type": "email"
+    },
+    "Téléphone": {
+      "default": "",
+      "type": "string"
+    },
+    "CV": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "Titre": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Texte compétences": {
+      "default": "",
+      "type": "text"
+    },
+    "Photo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "Logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
