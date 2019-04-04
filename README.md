@@ -1,3 +1,3 @@
 # newsite
 
-A quick description of newsite.
+Refonte de mon site Labo Web France
