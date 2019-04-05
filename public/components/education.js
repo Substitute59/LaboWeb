@@ -15,13 +15,13 @@ class Education extends React.Component {
     };
   }
 
-  getHeader = (formation) => {
+  getHeader = formation => {
     const { classes, lang } = this.state;
 
     return <CardHeader disableTypography={true} className={classes.cardheader} title={lang === 'en' ? formation['Titre anglais'] : formation.Titre} />
   };
 
-  getContent = (formation) => {
+  getContent = formation => {
     const { classes, lang } = this.state;
 
     return <CardContent>
@@ -29,7 +29,7 @@ class Education extends React.Component {
     </CardContent>
   };
 
-  getFooter = (formation) => {
+  getFooter = formation => {
     const { classes, lang } = this.state;
 
     return <CardActions className={classes.cardfooter}>

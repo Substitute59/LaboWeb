@@ -74,7 +74,7 @@ class Site extends React.Component {
           <Home classes={classes} hp={hp} strapiUrl={strapiUrl} />
           <About classes={classes} hp={hp} lang={lang} hobbies={hobbies} />
           <Skills classes={classes} hp={hp} lang={lang} domains={domains} skills={skills} strapiUrl={strapiUrl} />
-          <Work classes={classes} hp={hp} lang={lang} projects={projects} />
+          <Work classes={classes} hp={hp} lang={lang} projects={projects} strapiUrl={strapiUrl} />
           <Experience classes={classes} hp={hp} lang={lang} experiences={experiences} strapiUrl={strapiUrl} />
           <Education classes={classes} hp={hp} lang={lang} formations={formations} />
           <Contact classes={classes} hp={hp} lang={lang} />

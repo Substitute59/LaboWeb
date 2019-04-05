@@ -23,6 +23,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-img-carousel": "^1.4.1",
     "react-jss": "^8.6.1",
     "react-markdown": "^4.0.6",
     "react-scrollspy-nav": "^1.2.1"

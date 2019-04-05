@@ -195,6 +195,15 @@ const styles = theme => ({
       paddingLeft: 50,
     },
   },
+  projectimg: {
+    maxWidth: '100%',
+    height: 200,
+  },
+  projecttitle: {
+    fontSize: 18,
+    fontWeight: 500,
+    color: green['500'],
+  },
   markdownxp: {
     wordBreak: 'break-all',
   },
@@ -213,6 +222,29 @@ const styles = theme => ({
         fontSize: 13,
       },
     },
+  },
+  modalheader: {
+    borderBottom: `1px solid ${grey[300]}`,
+    margin: 0,
+    padding: 20,
+    fontSize: 24,
+    color: green['500'],
+  },
+  modalcontent: {
+    margin: 0,
+    padding: 20,
+  },
+  modalactions: {
+    borderTop: `1px solid ${grey[300]}`,
+    margin: 0,
+    padding: 20,
+  },
+  modalbutton: {
+    color: green['500'],
+  },
+  modalimg: {
+    maxWidth: '100%',
+    width: 600,
   },
 });
 

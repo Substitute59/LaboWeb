@@ -15,7 +15,7 @@ class Experience extends React.Component {
     };
   }
 
-  getHeader = (xp) => {
+  getHeader = xp => {
     const { classes, strapiUrl, lang } = this.state;
 
     return <CardHeader
@@ -32,7 +32,7 @@ class Experience extends React.Component {
     />
   };
 
-  getContent = (xp) => {
+  getContent = xp => {
     const { classes, lang } = this.state;
 
     return <CardContent>
@@ -40,7 +40,7 @@ class Experience extends React.Component {
     </CardContent>
   };
 
-  getFooter = (xp) => {
+  getFooter = xp => {
     const { classes, lang } = this.state;
 
     return <CardActions className={classes.cardfooter}>

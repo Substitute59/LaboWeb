@@ -14,7 +14,7 @@ class Skills extends React.Component {
     };
   }
 
-  getSkillsByDomain = (domain) => {
+  getSkillsByDomain = domain => {
     const domainSkills = this.props.skills.filter(skill => {
       return skill.domaine._id == domain
     });

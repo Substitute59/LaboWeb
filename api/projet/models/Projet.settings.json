@@ -23,14 +23,6 @@
       "default": "",
       "type": "text"
     },
-    "Description longue": {
-      "default": "",
-      "type": "text"
-    },
-    "Description longue anglais": {
-      "default": "",
-      "type": "text"
-    },
     "Lien": {
       "default": "",
       "type": "string"

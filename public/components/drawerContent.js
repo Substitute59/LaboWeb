@@ -1,6 +1,7 @@
 import ReactMarkdown from 'react-markdown';
 import ScrollspyNav from 'react-scrollspy-nav';
 import Divider from '@material-ui/core/Divider';
+import Link from '@material-ui/core/Link';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -28,9 +29,9 @@ class DrawerContent extends React.Component {
       <div>
         <ScrollspyNav scrollTargetIds={['home', 'section-about', 'section-skills', 'section-work', 'section-experience', 'section-education', 'section-contact']} activeNavClass="currentnav" scrollDuration="200">
           <div className={classes.logo}>
-            <a href="#home" onClick={this.closeDrawer}>
+            <Link href="#home" onClick={this.closeDrawer}>
               <img src={strapiUrl+hp.Logo.url} alt={hp.Titre} />
-            </a>
+            </Link>
             <ReactMarkdown source={hp['Titre du site']} />
           </div>
           <Divider />
