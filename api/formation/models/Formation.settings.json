@@ -29,14 +29,6 @@
       "default": "",
       "type": "string"
     },
-    "Type": {
-      "default": "formation",
-      "type": "enumeration",
-      "enum": [
-        "formation",
-        " école"
-      ]
-    },
     "Année": {
       "default": "",
       "type": "string"
@@ -44,6 +36,14 @@
     "Ordre": {
       "default": "",
       "type": "integer"
+    },
+    "Description": {
+      "default": "",
+      "type": "text"
+    },
+    "Description anglais": {
+      "default": "",
+      "type": "text"
     }
   }
 }

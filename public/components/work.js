@@ -5,7 +5,7 @@ class Work extends React.Component {
     const { classes, hp } = this.props;
 
     return (
-      <div id="section-work">
+      <div id="section-work" className={classes.section}>
         <AppBar position="static" className={classes.appbar}>
           {hp['Titre projets']}
         </AppBar>

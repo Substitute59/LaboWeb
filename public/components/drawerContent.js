@@ -70,14 +70,17 @@ class DrawerContent extends React.Component {
               </ListItemIcon>
               <ListItemText classes={{ primary: classes.navlinktext }} primary={hp['Titre contact']} />
             </ListItem>
-            <ListItem button component="a" href={hp.CV} className={classes.navlink} onClick={this.closeDrawer}>
-              <ListItemIcon>
-                <DescriptionIcon className={classes.navicon} />
-              </ListItemIcon>
-              <ListItemText classes={{ primary: classes.navlinktext }} primary="CV" />
-            </ListItem>
           </List>
         </ScrollspyNav>
+        <Divider/>
+        <List>
+          <ListItem button component="a" href={strapiUrl + hp.CV.url} className={classes.navlink} target="_blank">
+            <ListItemIcon>
+              <DescriptionIcon className={classes.navicon} />
+            </ListItemIcon>
+            <ListItemText classes={{ primary: classes.navlinktext }} primary="CV" />
+          </ListItem>
+        </List>
       </div>
     );
   }

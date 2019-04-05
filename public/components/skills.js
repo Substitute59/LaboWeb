@@ -34,14 +34,14 @@ class Skills extends React.Component {
     const { classes, hp, lang, domains } = this.props;
 
     return (
-      <div id="section-skills">
+      <div id="section-skills" className={classes.section}>
         <AppBar position="static" className={classes.appbar}>
           {hp['Titre compétences']}
         </AppBar>
         <ReactMarkdown source={hp['Texte compétences']} className={classes.markdownskills} />
         {domains.map(domain => (
           <Card key={domain._id} className={classes.card}>
-            <CardHeader className={classes.cardheader} title={lang === 'en' ? domain['Titre anglais'] : domain.Titre} />
+            <CardHeader disableTypography={true} className={classes.cardheader} title={lang === 'en' ? domain['Titre anglais'] : domain.Titre} />
             <CardContent>
               {this.getSkillsByDomain(domain._id)}
             </CardContent>

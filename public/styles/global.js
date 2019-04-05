@@ -44,15 +44,15 @@ class GlobalStyle extends React.Component {
           font-size: 12px;
           color: ${grey[700]};
         }
+        .${classes.skillko} img {
+          opacity: .5;
+        }
         [role="button"].currentnav {
           border-left: 3px solid ${green[500]};
           background-color: ${grey[100]};
         }
         [role="button"].currentnav span {
           font-weight: 500;
-        }
-        .${classes.skillko} img {
-          opacity: .5;
         }
       `}</style>
     );

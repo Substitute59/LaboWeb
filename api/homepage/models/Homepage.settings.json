@@ -41,10 +41,6 @@
       "default": "",
       "type": "string"
     },
-    "Sous-titre formations": {
-      "default": "",
-      "type": "string"
-    },
     "Titre contact": {
       "default": "",
       "type": "string"
@@ -84,6 +80,18 @@
       "via": "related",
       "plugin": "upload",
       "required": false
+    },
+    "Twitter": {
+      "default": "",
+      "type": "string"
+    },
+    "LinkedIn": {
+      "default": "",
+      "type": "string"
+    },
+    "Github": {
+      "default": "",
+      "type": "string"
     }
   }
 }

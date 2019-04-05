@@ -111,14 +111,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/AppBar */ "@material-ui/core/AppBar");
 /* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-markdown */ "react-markdown");
-/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Paper */ "@material-ui/core/Paper");
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-markdown */ "react-markdown");
+/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_8__);
 
 
 
 
 
 var _jsxFileName = "/Users/jonathandebaere/Labo Web France/Interne/Projets/newsite/public/components/about.js";
+
 
 
 
@@ -142,9 +145,10 @@ function (_React$Component) {
           hp = _this$props.hp;
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         id: "section-about",
+        className: classes.section,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9
+          lineNumber: 10
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_6___default.a, {
@@ -152,18 +156,25 @@ function (_React$Component) {
         className: classes.appbar,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 11
         },
         __self: this
-      }, hp['Titre à propos']), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      }, hp['Titre à propos']), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        className: classes.paper,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_8___default.a, {
         source: hp['Contenu à propos'],
         className: classes.markdownabout,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 15
         },
         __self: this
-      }));
+      })));
     }
   }]);
 
@@ -192,12 +203,39 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/AppBar */ "@material-ui/core/AppBar");
 /* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Paper */ "@material-ui/core/Paper");
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_core_List__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/List */ "@material-ui/core/List");
+/* harmony import */ var _material_ui_core_List__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/ListItem */ "@material-ui/core/ListItem");
+/* harmony import */ var _material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/ListItemIcon */ "@material-ui/core/ListItemIcon");
+/* harmony import */ var _material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/ListItemText */ "@material-ui/core/ListItemText");
+/* harmony import */ var _material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _material_ui_icons_Email__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/icons/Email */ "@material-ui/icons/Email");
+/* harmony import */ var _material_ui_icons_Email__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Email__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _material_ui_icons_Phone__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/icons/Phone */ "@material-ui/icons/Phone");
+/* harmony import */ var _material_ui_icons_Phone__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Phone__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _mdi_react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @mdi/react */ "@mdi/react");
+/* harmony import */ var _mdi_react__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_mdi_react__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _mdi_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @mdi/js */ "@mdi/js");
+/* harmony import */ var _mdi_js__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_mdi_js__WEBPACK_IMPORTED_MODULE_15__);
 
 
 
 
 
 var _jsxFileName = "/Users/jonathandebaere/Labo Web France/Interne/Projets/newsite/public/components/contact.js";
+
+
+
+
+
+
+
+
+
 
 
 
@@ -220,10 +258,10 @@ function (_React$Component) {
           hp = _this$props.hp;
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         id: "section-contact",
-        className: classes.fullheight,
+        className: "".concat(classes.fullheight, " ").concat(classes.section),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8
+          lineNumber: 17
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_6___default.a, {
@@ -231,10 +269,177 @@ function (_React$Component) {
         className: classes.appbar,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9
+          lineNumber: 18
         },
         __self: this
-      }, hp['Titre contact']));
+      }, hp['Titre contact']), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        className: classes.paper,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_8___default.a, {
+        component: "nav",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9___default.a, {
+        button: true,
+        component: "a",
+        href: "mailto:".concat(hp.Email),
+        target: "_blank",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_10___default.a, {
+        className: classes.socialicon,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_icons_Email__WEBPACK_IMPORTED_MODULE_12___default.a, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        primary: hp.Email,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9___default.a, {
+        button: true,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_10___default.a, {
+        className: classes.socialicon,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_icons_Phone__WEBPACK_IMPORTED_MODULE_13___default.a, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        primary: hp['Téléphone'],
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9___default.a, {
+        button: true,
+        component: "a",
+        href: hp.Twitter,
+        target: "_blank",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_10___default.a, {
+        className: classes.socialicon,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_mdi_react__WEBPACK_IMPORTED_MODULE_14___default.a, {
+        path: _mdi_js__WEBPACK_IMPORTED_MODULE_15__["mdiTwitterCircle"],
+        size: 1,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        primary: hp.Twitter,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9___default.a, {
+        button: true,
+        component: "a",
+        href: hp.Github,
+        target: "_blank",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_10___default.a, {
+        className: classes.socialicon,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_mdi_react__WEBPACK_IMPORTED_MODULE_14___default.a, {
+        path: _mdi_js__WEBPACK_IMPORTED_MODULE_15__["mdiGithubCircle"],
+        size: 1,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        primary: hp.Github,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9___default.a, {
+        button: true,
+        component: "a",
+        href: hp.LinkedIn,
+        target: "_blank",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_10___default.a, {
+        className: classes.socialicon,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_mdi_react__WEBPACK_IMPORTED_MODULE_14___default.a, {
+        path: _mdi_js__WEBPACK_IMPORTED_MODULE_15__["mdiLinkedin"],
+        size: 1,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        primary: hp.LinkedIn,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 54
+        },
+        __self: this
+      })))));
     }
   }]);
 
@@ -612,28 +817,40 @@ function (_React$Component) {
           lineNumber: 71
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_12___default.a, {
-        button: true,
-        component: "a",
-        href: hp.CV,
-        className: classes.navlink,
-        onClick: this.closeDrawer,
+      })))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_10___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 75
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 76
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_12___default.a, {
+        button: true,
+        component: "a",
+        href: strapiUrl + hp.CV.url,
+        className: classes.navlink,
+        target: "_blank",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 77
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_13___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 78
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_icons_Description__WEBPACK_IMPORTED_MODULE_21___default.a, {
         className: classes.navicon,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 79
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -643,10 +860,10 @@ function (_React$Component) {
         primary: "CV",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77
+          lineNumber: 81
         },
         __self: this
-      })))));
+      }))));
     }
   }]);
 
@@ -670,11 +887,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/AppBar */ "@material-ui/core/AppBar");
-/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/AppBar */ "@material-ui/core/AppBar");
+/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-markdown */ "react-markdown");
+/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _material_ui_core_Card__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/Card */ "@material-ui/core/Card");
+/* harmony import */ var _material_ui_core_Card__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _material_ui_core_CardHeader__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/CardHeader */ "@material-ui/core/CardHeader");
+/* harmony import */ var _material_ui_core_CardHeader__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CardHeader__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core/CardContent */ "@material-ui/core/CardContent");
+/* harmony import */ var _material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core/CardActions */ "@material-ui/core/CardActions");
+/* harmony import */ var _material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_13__);
+
+
 
 
 
@@ -684,44 +915,129 @@ var _jsxFileName = "/Users/jonathandebaere/Labo Web France/Interne/Projets/newsi
 
 
 
+
+
+
+
+
 var Education =
 /*#__PURE__*/
 function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Education, _React$Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Education, _React$Component);
 
-  function Education() {
+  function Education(props) {
+    var _this;
+
     Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Education);
 
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Education).apply(this, arguments));
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Education).call(this, props));
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "getHeader", function (formation) {
+      var _this$state = _this.state,
+          classes = _this$state.classes,
+          lang = _this$state.lang;
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_CardHeader__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        disableTypography: true,
+        className: classes.cardheader,
+        title: lang === 'en' ? formation['Titre anglais'] : formation.Titre,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "getContent", function (formation) {
+      var _this$state2 = _this.state,
+          classes = _this$state2.classes,
+          lang = _this$state2.lang;
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_12___default.a, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_9___default.a, {
+        source: lang === 'en' ? formation['Description anglais'] : formation.Description,
+        className: classes.markdownformation,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }));
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "getFooter", function (formation) {
+      var _this$state3 = _this.state,
+          classes = _this$state3.classes,
+          lang = _this$state3.lang;
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_13___default.a, {
+        className: classes.cardfooter,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
+      }, formation['Année'], " | ", formation.Organisme, " - ", formation.Lieu));
+    });
+
+    _this.state = {
+      strapiUrl: _this.props.strapiUrl,
+      classes: _this.props.classes,
+      lang: _this.props.lang
+    };
+    return _this;
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Education, [{
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       var _this$props = this.props,
           classes = _this$props.classes,
-          hp = _this$props.hp;
-      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+          hp = _this$props.hp,
+          formations = _this$props.formations;
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         id: "section-education",
+        className: classes.section,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8
+          lineNumber: 44
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_8___default.a, {
         position: "static",
         className: classes.appbar,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9
+          lineNumber: 45
         },
         __self: this
-      }, hp['Titre formations']));
+      }, hp['Titre formations']), formations.map(function (formation) {
+        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_10___default.a, {
+          key: formation._id,
+          className: classes.card,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 49
+          },
+          __self: this
+        }, _this2.getHeader(formation), _this2.getContent(formation), _this2.getFooter(formation));
+      }));
     }
   }]);
 
   return Education;
-}(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Education);
 
@@ -757,6 +1073,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var _material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core/CardActions */ "@material-ui/core/CardActions");
 /* harmony import */ var _material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/core/Grid */ "@material-ui/core/Grid");
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_14__);
 
 
 
@@ -765,6 +1083,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/jonathandebaere/Labo Web France/Interne/Projets/newsite/public/components/experience.js";
+
 
 
 
@@ -797,7 +1116,7 @@ function (_React$Component) {
           className: classes.xpimg,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 23
+            lineNumber: 24
           },
           __self: this
         }) : null,
@@ -806,27 +1125,27 @@ function (_React$Component) {
           className: classes.xpheader,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 27
+            lineNumber: 28
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
           className: classes.xpcompany,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 28
+            lineNumber: 29
           },
           __self: this
         }, xp.Entreprise), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
           className: classes.xpjob,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 29
+            lineNumber: 30
           },
           __self: this
         }, lang === 'en' ? xp['Poste anglais'] : xp.Poste)),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 22
         },
         __self: this
       });
@@ -839,7 +1158,7 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_12___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 39
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_9___default.a, {
@@ -847,7 +1166,7 @@ function (_React$Component) {
         className: classes.markdownxp,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 40
         },
         __self: this
       }));
@@ -861,16 +1180,16 @@ function (_React$Component) {
         className: classes.cardfooter,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 47
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 48
         },
         __self: this
-      }, lang === 'en' ? xp['Période anglais'] : xp['Période'], " - ", lang === 'en' ? xp['Lieu anglais'] : xp.Lieu));
+      }, lang === 'en' ? xp['Période anglais'] : xp['Période'], " | ", lang === 'en' ? xp['Lieu anglais'] : xp.Lieu));
     });
 
     _this.state = {
@@ -892,9 +1211,10 @@ function (_React$Component) {
           experiences = _this$props.experiences;
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         id: "section-experience",
+        className: classes.section,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 56
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_8___default.a, {
@@ -902,7 +1222,7 @@ function (_React$Component) {
         className: classes.appbar,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 57
         },
         __self: this
       }, hp['Titre expériences']), experiences.map(function (xp) {
@@ -911,7 +1231,7 @@ function (_React$Component) {
           className: classes.card,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 60
+            lineNumber: 61
           },
           __self: this
         }, _this2.getHeader(xp), _this2.getContent(xp), _this2.getFooter(xp));
@@ -1443,6 +1763,7 @@ function (_React$Component) {
           domains = _this$props.domains;
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         id: "section-skills",
+        className: classes.section,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 37
@@ -1474,6 +1795,7 @@ function (_React$Component) {
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_CardHeader__WEBPACK_IMPORTED_MODULE_11___default.a, {
+          disableTypography: true,
           className: classes.cardheader,
           title: lang === 'en' ? domain['Titre anglais'] : domain.Titre,
           __source: {
@@ -1545,6 +1867,7 @@ function (_React$Component) {
           hp = _this$props.hp;
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         id: "section-work",
+        className: classes.section,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 8
@@ -2915,10 +3238,10 @@ function (_React$Component) {
     value: function render() {
       var classes = this.props.classes;
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_5___default.a, {
-        id: "2424335987",
-        dynamic: [classes.photo, classes.photo, classes.photo, classes.logo, classes.logo, _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_8___default.a[500], classes.logo, classes.logo, classes.logo, _material_ui_core_colors_grey__WEBPACK_IMPORTED_MODULE_7___default.a[700], classes.logo, _material_ui_core_colors_grey__WEBPACK_IMPORTED_MODULE_7___default.a[700], _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_8___default.a[500], _material_ui_core_colors_grey__WEBPACK_IMPORTED_MODULE_7___default.a[100], classes.skillko],
+        id: "2133941744",
+        dynamic: [classes.photo, classes.photo, classes.photo, classes.logo, classes.logo, _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_8___default.a[500], classes.logo, classes.logo, classes.logo, _material_ui_core_colors_grey__WEBPACK_IMPORTED_MODULE_7___default.a[700], classes.logo, _material_ui_core_colors_grey__WEBPACK_IMPORTED_MODULE_7___default.a[700], classes.skillko, _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_8___default.a[500], _material_ui_core_colors_grey__WEBPACK_IMPORTED_MODULE_7___default.a[100]],
         __self: this
-      }, "body{font-family:'Roboto';}.".concat(classes.photo, " blockquote{font-style:italic;text-align:justify;margin:0;}.").concat(classes.photo, " blockquote p{margin:0;line-height:1.1em;}.").concat(classes.photo, " blockquote+p{text-align:right;margin:10px 0 0;font-size:.8em;}.").concat(classes.logo, " p{margin:0;}.").concat(classes.logo, " h1{margin:10px 0 0;font-size:26px;color:").concat(_material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_8___default.a[500], ";}.").concat(classes.logo, " h2,.").concat(classes.logo, " h3{margin:0;}.").concat(classes.logo, " h2{font-size:16px;color:").concat(_material_ui_core_colors_grey__WEBPACK_IMPORTED_MODULE_7___default.a[700], ";}.").concat(classes.logo, " h3{font-size:12px;color:").concat(_material_ui_core_colors_grey__WEBPACK_IMPORTED_MODULE_7___default.a[700], ";}[role=\"button\"].currentnav{border-left:3px solid ").concat(_material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_8___default.a[500], ";background-color:").concat(_material_ui_core_colors_grey__WEBPACK_IMPORTED_MODULE_7___default.a[100], ";}[role=\"button\"].currentnav span{font-weight:500;}.").concat(classes.skillko, " img{opacity:.5;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qb25hdGhhbmRlYmFlcmUvTGFibyBXZWIgRnJhbmNlL0ludGVybmUvUHJvamV0cy9uZXdzaXRlL3B1YmxpYy9zdHlsZXMvZ2xvYmFsLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVF5QixBQUdnQyxBQUdILEFBS1QsQUFJUSxBQUtSLEFBR08sQUFNUCxBQUdNLEFBSUEsQUFJcUMsQUFJcEMsQUFHTCxTQW5DTyxBQVNwQixBQVNBLEVBa0JBLElBZnFDLEFBSUMsQ0FickIsQUFxQmpCLENBN0JrQixDQVRHLEdBSHJCLE1BU0EsSUFZcUMsRUFScEIsSUFUTixTQUNYLEVBU0EsRUFnQkEsQ0FJQSxDQUdpRCxjQWZqRCxpQ0FnQkEiLCJmaWxlIjoiL1VzZXJzL2pvbmF0aGFuZGViYWVyZS9MYWJvIFdlYiBGcmFuY2UvSW50ZXJuZS9Qcm9qZXRzL25ld3NpdGUvcHVibGljL3N0eWxlcy9nbG9iYWwuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgZ3JleSBmcm9tICdAbWF0ZXJpYWwtdWkvY29yZS9jb2xvcnMvZ3JleSc7XG5pbXBvcnQgZ3JlZW4gZnJvbSAnQG1hdGVyaWFsLXVpL2NvcmUvY29sb3JzL2dyZWVuJztcblxuY2xhc3MgR2xvYmFsU3R5bGUgZXh0ZW5kcyBSZWFjdC5Db21wb25lbnQge1xuICByZW5kZXIoKSB7XG4gICAgY29uc3QgeyBjbGFzc2VzIH0gPSB0aGlzLnByb3BzO1xuXG4gICAgcmV0dXJuIChcbiAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICAgIGJvZHkge1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvJztcbiAgICAgICAgfVxuICAgICAgICAuJHtjbGFzc2VzLnBob3RvfSBibG9ja3F1b3RlIHtcbiAgICAgICAgICBmb250LXN0eWxlOiBpdGFsaWM7XG4gICAgICAgICAgdGV4dC1hbGlnbjoganVzdGlmeTtcbiAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIH1cbiAgICAgICAgLiR7Y2xhc3Nlcy5waG90b30gYmxvY2txdW90ZSBwIHtcbiAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgbGluZS1oZWlnaHQ6IDEuMWVtO1xuICAgICAgICB9XG4gICAgICAgIC4ke2NsYXNzZXMucGhvdG99IGJsb2NrcXVvdGUgKyBwIHtcbiAgICAgICAgICB0ZXh0LWFsaWduOiByaWdodDtcbiAgICAgICAgICBtYXJnaW46IDEwcHggMCAwO1xuICAgICAgICAgIGZvbnQtc2l6ZTogLjhlbTtcbiAgICAgICAgfVxuICAgICAgICAuJHtjbGFzc2VzLmxvZ299IHAge1xuICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgfVxuICAgICAgICAuJHtjbGFzc2VzLmxvZ299IGgxIHtcbiAgICAgICAgICBtYXJnaW46IDEwcHggMCAwO1xuICAgICAgICAgIGZvbnQtc2l6ZTogMjZweDtcbiAgICAgICAgICBjb2xvcjogJHtncmVlbls1MDBdfTtcbiAgICAgICAgfVxuICAgICAgICAuJHtjbGFzc2VzLmxvZ299IGgyLFxuICAgICAgICAuJHtjbGFzc2VzLmxvZ299IGgzIHtcbiAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIH1cbiAgICAgICAgLiR7Y2xhc3Nlcy5sb2dvfSBoMiB7XG4gICAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICAgIGNvbG9yOiAke2dyZXlbNzAwXX07XG4gICAgICAgIH1cbiAgICAgICAgLiR7Y2xhc3Nlcy5sb2dvfSBoMyB7XG4gICAgICAgICAgZm9udC1zaXplOiAxMnB4O1xuICAgICAgICAgIGNvbG9yOiAke2dyZXlbNzAwXX07XG4gICAgICAgIH1cbiAgICAgICAgW3JvbGU9XCJidXR0b25cIl0uY3VycmVudG5hdiB7XG4gICAgICAgICAgYm9yZGVyLWxlZnQ6IDNweCBzb2xpZCAke2dyZWVuWzUwMF19O1xuICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICR7Z3JleVsxMDBdfTtcbiAgICAgICAgfVxuICAgICAgICBbcm9sZT1cImJ1dHRvblwiXS5jdXJyZW50bmF2IHNwYW4ge1xuICAgICAgICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgICAgIH1cbiAgICAgICAgLiR7Y2xhc3Nlcy5za2lsbGtvfSBpbWcge1xuICAgICAgICAgIG9wYWNpdHk6IC41O1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgKTtcbiAgfVxufVxuXG5leHBvcnQgZGVmYXVsdCBHbG9iYWxTdHlsZTtcbiJdfQ== */\n/*@ sourceURL=/Users/jonathandebaere/Labo Web France/Interne/Projets/newsite/public/styles/global.js */"));
+      }, "body{font-family:'Roboto';}.".concat(classes.photo, " blockquote{font-style:italic;text-align:justify;margin:0;}.").concat(classes.photo, " blockquote p{margin:0;line-height:1.1em;}.").concat(classes.photo, " blockquote+p{text-align:right;margin:10px 0 0;font-size:.8em;}.").concat(classes.logo, " p{margin:0;}.").concat(classes.logo, " h1{margin:10px 0 0;font-size:26px;color:").concat(_material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_8___default.a[500], ";}.").concat(classes.logo, " h2,.").concat(classes.logo, " h3{margin:0;}.").concat(classes.logo, " h2{font-size:16px;color:").concat(_material_ui_core_colors_grey__WEBPACK_IMPORTED_MODULE_7___default.a[700], ";}.").concat(classes.logo, " h3{font-size:12px;color:").concat(_material_ui_core_colors_grey__WEBPACK_IMPORTED_MODULE_7___default.a[700], ";}.").concat(classes.skillko, " img{opacity:.5;}[role=\"button\"].currentnav{border-left:3px solid ").concat(_material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_8___default.a[500], ";background-color:").concat(_material_ui_core_colors_grey__WEBPACK_IMPORTED_MODULE_7___default.a[100], ";}[role=\"button\"].currentnav span{font-weight:500;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qb25hdGhhbmRlYmFlcmUvTGFibyBXZWIgRnJhbmNlL0ludGVybmUvUHJvamV0cy9uZXdzaXRlL3B1YmxpYy9zdHlsZXMvZ2xvYmFsLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVF5QixBQUdnQyxBQUdILEFBS1QsQUFJUSxBQUtSLEFBR08sQUFNUCxBQUdNLEFBSUEsQUFJSixBQUd5QyxBQUlwQyxTQW5DRSxBQVNwQixBQVNBLEVBV0EsSUFScUMsQUFJQyxDQWJyQixBQXdCakIsQ0FoQ2tCLENBVEcsR0FIckIsTUFTQSxJQVlxQyxFQVJwQixJQVROLFNBQ1gsRUFTQSxFQWdCQSxDQUlBLENBTWlELGNBbEJqRCxpQ0FtQkEiLCJmaWxlIjoiL1VzZXJzL2pvbmF0aGFuZGViYWVyZS9MYWJvIFdlYiBGcmFuY2UvSW50ZXJuZS9Qcm9qZXRzL25ld3NpdGUvcHVibGljL3N0eWxlcy9nbG9iYWwuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgZ3JleSBmcm9tICdAbWF0ZXJpYWwtdWkvY29yZS9jb2xvcnMvZ3JleSc7XG5pbXBvcnQgZ3JlZW4gZnJvbSAnQG1hdGVyaWFsLXVpL2NvcmUvY29sb3JzL2dyZWVuJztcblxuY2xhc3MgR2xvYmFsU3R5bGUgZXh0ZW5kcyBSZWFjdC5Db21wb25lbnQge1xuICByZW5kZXIoKSB7XG4gICAgY29uc3QgeyBjbGFzc2VzIH0gPSB0aGlzLnByb3BzO1xuXG4gICAgcmV0dXJuIChcbiAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICAgIGJvZHkge1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvJztcbiAgICAgICAgfVxuICAgICAgICAuJHtjbGFzc2VzLnBob3RvfSBibG9ja3F1b3RlIHtcbiAgICAgICAgICBmb250LXN0eWxlOiBpdGFsaWM7XG4gICAgICAgICAgdGV4dC1hbGlnbjoganVzdGlmeTtcbiAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIH1cbiAgICAgICAgLiR7Y2xhc3Nlcy5waG90b30gYmxvY2txdW90ZSBwIHtcbiAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgbGluZS1oZWlnaHQ6IDEuMWVtO1xuICAgICAgICB9XG4gICAgICAgIC4ke2NsYXNzZXMucGhvdG99IGJsb2NrcXVvdGUgKyBwIHtcbiAgICAgICAgICB0ZXh0LWFsaWduOiByaWdodDtcbiAgICAgICAgICBtYXJnaW46IDEwcHggMCAwO1xuICAgICAgICAgIGZvbnQtc2l6ZTogLjhlbTtcbiAgICAgICAgfVxuICAgICAgICAuJHtjbGFzc2VzLmxvZ299IHAge1xuICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgfVxuICAgICAgICAuJHtjbGFzc2VzLmxvZ299IGgxIHtcbiAgICAgICAgICBtYXJnaW46IDEwcHggMCAwO1xuICAgICAgICAgIGZvbnQtc2l6ZTogMjZweDtcbiAgICAgICAgICBjb2xvcjogJHtncmVlbls1MDBdfTtcbiAgICAgICAgfVxuICAgICAgICAuJHtjbGFzc2VzLmxvZ299IGgyLFxuICAgICAgICAuJHtjbGFzc2VzLmxvZ299IGgzIHtcbiAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIH1cbiAgICAgICAgLiR7Y2xhc3Nlcy5sb2dvfSBoMiB7XG4gICAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICAgIGNvbG9yOiAke2dyZXlbNzAwXX07XG4gICAgICAgIH1cbiAgICAgICAgLiR7Y2xhc3Nlcy5sb2dvfSBoMyB7XG4gICAgICAgICAgZm9udC1zaXplOiAxMnB4O1xuICAgICAgICAgIGNvbG9yOiAke2dyZXlbNzAwXX07XG4gICAgICAgIH1cbiAgICAgICAgLiR7Y2xhc3Nlcy5za2lsbGtvfSBpbWcge1xuICAgICAgICAgIG9wYWNpdHk6IC41O1xuICAgICAgICB9XG4gICAgICAgIFtyb2xlPVwiYnV0dG9uXCJdLmN1cnJlbnRuYXYge1xuICAgICAgICAgIGJvcmRlci1sZWZ0OiAzcHggc29saWQgJHtncmVlbls1MDBdfTtcbiAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAke2dyZXlbMTAwXX07XG4gICAgICAgIH1cbiAgICAgICAgW3JvbGU9XCJidXR0b25cIl0uY3VycmVudG5hdiBzcGFuIHtcbiAgICAgICAgICBmb250LXdlaWdodDogNTAwO1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgKTtcbiAgfVxufVxuXG5leHBvcnQgZGVmYXVsdCBHbG9iYWxTdHlsZTtcbiJdfQ== */\n/*@ sourceURL=/Users/jonathandebaere/Labo Web France/Interne/Projets/newsite/public/styles/global.js */"));
     }
   }]);
 
@@ -3040,6 +3363,9 @@ var styles = function styles(theme) {
       marginRight: 0,
       color: _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_2___default.a[400]
     },
+    section: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, theme.breakpoints.down('sm'), {
+      marginBottom: -88
+    }),
     appbar: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
       fontSize: 36,
       color: '#fff',
@@ -3072,25 +3398,47 @@ var styles = function styles(theme) {
     }, theme.breakpoints.up('md'), {
       fontSize: 14
     }),
+    paper: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      margin: 25,
+      padding: 16
+    }, theme.breakpoints.down('sm'), {
+      margin: 15
+    }),
     card: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
       margin: 25
     }, theme.breakpoints.down('sm'), {
       margin: 15
     }),
     cardheader: {
+      fontSize: 24,
+      color: _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_2___default.a[500],
       borderBottom: "1px solid ".concat(_material_ui_core_colors_grey__WEBPACK_IMPORTED_MODULE_1___default.a[300])
     },
     cardfooter: {
       fontSize: '.875rem',
       padding: 12,
-      borderTop: "1px solid ".concat(_material_ui_core_colors_grey__WEBPACK_IMPORTED_MODULE_1___default.a[300])
+      backgroundColor: _material_ui_core_colors_grey__WEBPACK_IMPORTED_MODULE_1___default.a[100]
     },
     xpimg: {
       width: 75
     },
-    xpheader: {
+    xpheader: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, theme.breakpoints.up('md'), {
       display: 'flex',
-      justifyContent: 'space-between'
+      justifyContent: 'space-between',
+      alignItems: 'center'
+    }),
+    xpcompany: {
+      fontSize: 24,
+      color: _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_2___default.a[500]
+    },
+    xpjob: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      color: _material_ui_core_colors_grey__WEBPACK_IMPORTED_MODULE_1___default.a[700]
+    }, theme.breakpoints.up('md'), {
+      paddingLeft: 50
+    }),
+    socialicon: {
+      height: 24,
+      color: '#000'
     }
   };
 };
@@ -3265,6 +3613,17 @@ module.exports = require("@material-ui/core/ListItemText");
 
 /***/ }),
 
+/***/ "@material-ui/core/Paper":
+/*!******************************************!*\
+  !*** external "@material-ui/core/Paper" ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Paper");
+
+/***/ }),
+
 /***/ "@material-ui/core/colors/green":
 /*!*************************************************!*\
   !*** external "@material-ui/core/colors/green" ***!
@@ -3364,6 +3723,17 @@ module.exports = require("@material-ui/icons/Person");
 
 /***/ }),
 
+/***/ "@material-ui/icons/Phone":
+/*!*******************************************!*\
+  !*** external "@material-ui/icons/Phone" ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/Phone");
+
+/***/ }),
+
 /***/ "@material-ui/icons/School":
 /*!********************************************!*\
   !*** external "@material-ui/icons/School" ***!
@@ -3383,6 +3753,28 @@ module.exports = require("@material-ui/icons/School");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/icons/TrendingUp");
+
+/***/ }),
+
+/***/ "@mdi/js":
+/*!**************************!*\
+  !*** external "@mdi/js" ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@mdi/js");
+
+/***/ }),
+
+/***/ "@mdi/react":
+/*!*****************************!*\
+  !*** external "@mdi/react" ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@mdi/react");
 
 /***/ }),
 

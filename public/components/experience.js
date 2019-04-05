@@ -4,6 +4,7 @@ import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
+import Grid from '@material-ui/core/Grid';
 
 class Experience extends React.Component {
   constructor(props) {
@@ -44,7 +45,7 @@ class Experience extends React.Component {
     const { classes, lang } = this.state;
 
     return <CardActions className={classes.cardfooter}>
-      <div>{lang === 'en' ? xp['Période anglais'] : xp['Période']} - {lang === 'en' ? xp['Lieu anglais'] : xp.Lieu}</div>
+      <div>{lang === 'en' ? xp['Période anglais'] : xp['Période']} | {lang === 'en' ? xp['Lieu anglais'] : xp.Lieu}</div>
     </CardActions>
   };
 
@@ -52,7 +53,7 @@ class Experience extends React.Component {
     const { classes, hp, experiences } = this.props;
 
     return (
-      <div id="section-experience">
+      <div id="section-experience" className={classes.section}>
         <AppBar position="static" className={classes.appbar}>
           {hp['Titre expériences']}
         </AppBar>

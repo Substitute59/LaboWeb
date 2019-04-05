@@ -100,6 +100,11 @@ const styles = theme => ({
     marginRight: 0,
     color: green[400],
   },
+  section: {
+    [theme.breakpoints.down('sm')]: {
+      marginBottom: -88,
+    },
+  },
   appbar: {
     fontSize: 36,
     color: '#fff',
@@ -131,7 +136,14 @@ const styles = theme => ({
   skilltitle: {
     fontSize: 12,
     [theme.breakpoints.up('md')]: {
-      fontSize: 14
+      fontSize: 14,
+    },
+  },
+  paper: {
+    margin: 25,
+    padding: 16,
+    [theme.breakpoints.down('sm')]: {
+      margin: 15,
     },
   },
   card: {
@@ -141,19 +153,38 @@ const styles = theme => ({
     },
   },
   cardheader: {
+    fontSize: 24,
+    color: green[500],
     borderBottom: `1px solid ${grey[300]}`,
   },
   cardfooter: {
     fontSize: '.875rem',
     padding: 12,
-    borderTop: `1px solid ${grey[300]}`,
+    backgroundColor: grey[100],
   },
   xpimg: {
     width: 75,
   },
   xpheader: {
-    display: 'flex',
-    justifyContent: 'space-between',
+    [theme.breakpoints.up('md')]: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+    },
+  },
+  xpcompany: {
+    fontSize: 24,
+    color: green[500],
+  },
+  xpjob: {
+    color: grey[700],
+    [theme.breakpoints.up('md')]: {
+      paddingLeft: 50,
+    },
+  },
+  socialicon: {
+    height: 24,
+    color: '#000',
   },
 });
 
