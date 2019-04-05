@@ -115,12 +115,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-markdown */ "react-markdown");
 /* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/Grid */ "@material-ui/core/Grid");
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _material_ui_icons__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/icons */ "@material-ui/icons");
+/* harmony import */ var _material_ui_icons__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons__WEBPACK_IMPORTED_MODULE_10__);
 
 
 
 
 
 var _jsxFileName = "/Users/jonathandebaere/Labo Web France/Interne/Projets/newsite/public/components/about.js";
+
+
 
 
 
@@ -142,13 +148,15 @@ function (_React$Component) {
     value: function render() {
       var _this$props = this.props,
           classes = _this$props.classes,
-          hp = _this$props.hp;
+          hp = _this$props.hp,
+          hobbies = _this$props.hobbies,
+          lang = _this$props.lang;
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         id: "section-about",
         className: classes.section,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 12
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_6___default.a, {
@@ -156,14 +164,14 @@ function (_React$Component) {
         className: classes.appbar,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 13
         },
         __self: this
       }, hp['Titre à propos']), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_7___default.a, {
         className: classes.paper,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 16
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_8___default.a, {
@@ -171,10 +179,46 @@ function (_React$Component) {
         className: classes.markdownabout,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 17
         },
         __self: this
-      })));
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_9___default.a, {
+        container: true,
+        justify: "space-around",
+        spacing: 16,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
+      }, hobbies.map(function (hobby) {
+        var Icon = _material_ui_icons__WEBPACK_IMPORTED_MODULE_10__[hobby.Icone];
+        return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_9___default.a, {
+          item: true,
+          key: hobby._id,
+          className: classes.hobby,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 21
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Icon, {
+          fontSize: "large",
+          className: classes.hobbyicon,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 22
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+          className: classes.hobbytitle,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 23
+          },
+          __self: this
+        }, lang === 'en' ? hobby['Titre anglais'] : hobby.Titre));
+      }))));
     }
   }]);
 
@@ -310,6 +354,7 @@ function (_React$Component) {
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        className: classes.contacttxt,
         primary: hp.Email,
         __source: {
           fileName: _jsxFileName,
@@ -337,6 +382,7 @@ function (_React$Component) {
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        className: classes.contacttxt,
         primary: hp['Téléphone'],
         __source: {
           fileName: _jsxFileName,
@@ -369,6 +415,7 @@ function (_React$Component) {
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        className: classes.contacttxt,
         primary: hp.Twitter,
         __source: {
           fileName: _jsxFileName,
@@ -401,6 +448,7 @@ function (_React$Component) {
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        className: classes.contacttxt,
         primary: hp.Github,
         __source: {
           fileName: _jsxFileName,
@@ -433,6 +481,7 @@ function (_React$Component) {
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        className: classes.contacttxt,
         primary: hp.LinkedIn,
         __source: {
           fileName: _jsxFileName,
@@ -496,6 +545,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_icons_Email__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Email__WEBPACK_IMPORTED_MODULE_20__);
 /* harmony import */ var _material_ui_icons_Description__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @material-ui/icons/Description */ "@material-ui/icons/Description");
 /* harmony import */ var _material_ui_icons_Description__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Description__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var _material_ui_icons_Translate__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @material-ui/icons/Translate */ "@material-ui/icons/Translate");
+/* harmony import */ var _material_ui_icons_Translate__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Translate__WEBPACK_IMPORTED_MODULE_22__);
 
 
 
@@ -504,6 +555,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/jonathandebaere/Labo Web France/Interne/Projets/newsite/public/components/drawerContent.js";
+
 
 
 
@@ -553,11 +605,12 @@ function (_React$Component) {
       var _this$props = this.props,
           classes = _this$props.classes,
           hp = _this$props.hp,
-          strapiUrl = _this$props.strapiUrl;
+          strapiUrl = _this$props.strapiUrl,
+          lang = _this$props.lang;
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 28
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_scrollspy_nav__WEBPACK_IMPORTED_MODULE_9___default.a, {
@@ -566,14 +619,14 @@ function (_React$Component) {
         scrollDuration: "200",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 29
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: classes.logo,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 30
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
@@ -581,7 +634,7 @@ function (_React$Component) {
         onClick: this.closeDrawer,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 31
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
@@ -589,20 +642,20 @@ function (_React$Component) {
         alt: hp.Titre,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 32
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_8___default.a, {
         source: hp['Titre du site'],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 34
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_10___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 36
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_11___default.a, {
@@ -610,7 +663,7 @@ function (_React$Component) {
         className: classes.nav,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 37
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_12___default.a, {
@@ -621,20 +674,20 @@ function (_React$Component) {
         onClick: this.closeDrawer,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 38
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_13___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 39
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_icons_Person__WEBPACK_IMPORTED_MODULE_15___default.a, {
         className: classes.navicon,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 40
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -644,7 +697,7 @@ function (_React$Component) {
         primary: hp['Titre à propos'],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 42
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_12___default.a, {
@@ -655,20 +708,20 @@ function (_React$Component) {
         onClick: this.closeDrawer,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 44
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_13___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 45
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_icons_BarChart__WEBPACK_IMPORTED_MODULE_16___default.a, {
         className: classes.navicon,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 46
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -678,7 +731,7 @@ function (_React$Component) {
         primary: hp['Titre compétences'],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 48
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_12___default.a, {
@@ -689,20 +742,20 @@ function (_React$Component) {
         onClick: this.closeDrawer,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 50
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_13___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 51
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_icons_DesktopMac__WEBPACK_IMPORTED_MODULE_17___default.a, {
         className: classes.navicon,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 52
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -712,7 +765,7 @@ function (_React$Component) {
         primary: hp['Titre projets'],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 54
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_12___default.a, {
@@ -723,20 +776,20 @@ function (_React$Component) {
         onClick: this.closeDrawer,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 56
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_13___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 57
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_icons_TrendingUp__WEBPACK_IMPORTED_MODULE_18___default.a, {
         className: classes.navicon,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 58
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -746,7 +799,7 @@ function (_React$Component) {
         primary: hp['Titre expériences'],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 60
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_12___default.a, {
@@ -757,20 +810,20 @@ function (_React$Component) {
         onClick: this.closeDrawer,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 62
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_13___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 63
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_icons_School__WEBPACK_IMPORTED_MODULE_19___default.a, {
         className: classes.navicon,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 64
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -780,7 +833,7 @@ function (_React$Component) {
         primary: hp['Titre formations'],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 66
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_12___default.a, {
@@ -791,20 +844,20 @@ function (_React$Component) {
         onClick: this.closeDrawer,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 68
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_13___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 69
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_icons_Email__WEBPACK_IMPORTED_MODULE_20___default.a, {
         className: classes.navicon,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 70
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -814,19 +867,20 @@ function (_React$Component) {
         primary: hp['Titre contact'],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 72
         },
         __self: this
       })))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_10___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 76
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        className: classes.nav,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 76
+          lineNumber: 77
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_12___default.a, {
@@ -837,20 +891,20 @@ function (_React$Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77
+          lineNumber: 78
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_13___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
+          lineNumber: 79
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_icons_Description__WEBPACK_IMPORTED_MODULE_21___default.a, {
         className: classes.navicon,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 80
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -860,7 +914,40 @@ function (_React$Component) {
         primary: "CV",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 82
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_12___default.a, {
+        button: true,
+        component: "a",
+        href: lang === 'en' ? '/index' : '/en',
+        className: classes.navlink,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 84
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_13___default.a, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 85
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_icons_Translate__WEBPACK_IMPORTED_MODULE_22___default.a, {
+        className: classes.navicon,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 86
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_14___default.a, {
+        classes: {
+          primary: classes.navlinktext
+        },
+        primary: lang === 'en' ? 'French / Français' : 'Anglais / English',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 88
         },
         __self: this
       }))));
@@ -1073,8 +1160,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var _material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core/CardActions */ "@material-ui/core/CardActions");
 /* harmony import */ var _material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/core/Grid */ "@material-ui/core/Grid");
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_14__);
 
 
 
@@ -1083,7 +1168,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/jonathandebaere/Labo Web France/Interne/Projets/newsite/public/components/experience.js";
-
 
 
 
@@ -1116,7 +1200,7 @@ function (_React$Component) {
           className: classes.xpimg,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 24
+            lineNumber: 23
           },
           __self: this
         }) : null,
@@ -1125,27 +1209,27 @@ function (_React$Component) {
           className: classes.xpheader,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 28
+            lineNumber: 27
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
           className: classes.xpcompany,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 29
+            lineNumber: 28
           },
           __self: this
         }, xp.Entreprise), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
           className: classes.xpjob,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 30
+            lineNumber: 29
           },
           __self: this
         }, lang === 'en' ? xp['Poste anglais'] : xp.Poste)),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 21
         },
         __self: this
       });
@@ -1158,7 +1242,7 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_12___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 38
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_9___default.a, {
@@ -1166,7 +1250,7 @@ function (_React$Component) {
         className: classes.markdownxp,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 39
         },
         __self: this
       }));
@@ -1180,13 +1264,13 @@ function (_React$Component) {
         className: classes.cardfooter,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 46
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 47
         },
         __self: this
       }, lang === 'en' ? xp['Période anglais'] : xp['Période'], " | ", lang === 'en' ? xp['Lieu anglais'] : xp.Lieu));
@@ -1214,7 +1298,7 @@ function (_React$Component) {
         className: classes.section,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 55
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_8___default.a, {
@@ -1222,7 +1306,7 @@ function (_React$Component) {
         className: classes.appbar,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 56
         },
         __self: this
       }, hp['Titre expériences']), experiences.map(function (xp) {
@@ -1231,7 +1315,7 @@ function (_React$Component) {
           className: classes.card,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 61
+            lineNumber: 60
           },
           __self: this
         }, _this2.getHeader(xp), _this2.getContent(xp), _this2.getFooter(xp));
@@ -1479,6 +1563,7 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_drawerContent__WEBPACK_IMPORTED_MODULE_11__["default"], {
         classes: classes,
+        lang: lang,
         hp: hp,
         strapiUrl: strapiUrl,
         handleDrawerToggle: this.handleDrawerToggle,
@@ -1508,6 +1593,7 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_drawerContent__WEBPACK_IMPORTED_MODULE_11__["default"], {
         classes: classes,
+        lang: lang,
         hp: hp,
         strapiUrl: strapiUrl,
         __source: {
@@ -1557,6 +1643,7 @@ function (_React$Component) {
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_about__WEBPACK_IMPORTED_MODULE_13__["default"], {
         classes: classes,
         hp: hp,
+        lang: lang,
         hobbies: hobbies,
         __source: {
           fileName: _jsxFileName,
@@ -3383,6 +3470,18 @@ var styles = function styles(theme) {
     markdownskills: {
       fontSize: 11
     },
+    hobby: {
+      textAlign: 'center',
+      padding: 10
+    },
+    hobbyicon: {
+      color: _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_2___default.a[500]
+    },
+    hobbytitle: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      fontSize: 12
+    }, theme.breakpoints.up('md'), {
+      fontSize: 14
+    }),
     skillko: {
       textAlign: 'center'
     },
@@ -3436,10 +3535,23 @@ var styles = function styles(theme) {
     }, theme.breakpoints.up('md'), {
       paddingLeft: 50
     }),
-    socialicon: {
+    markdownxp: {
+      wordBreak: 'break-all'
+    },
+    socialicon: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
       height: 24,
       color: '#000'
-    }
+    }, theme.breakpoints.down('sm'), {
+      marginRight: 10
+    }),
+    contacttxt: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      wordBreak: 'break-all'
+    }, theme.breakpoints.down('sm'), {
+      padding: 0,
+      '& > span': {
+        fontSize: 13
+      }
+    })
   };
 };
 
@@ -3657,6 +3769,17 @@ module.exports = require("@material-ui/core/styles");
 
 /***/ }),
 
+/***/ "@material-ui/icons":
+/*!*************************************!*\
+  !*** external "@material-ui/icons" ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons");
+
+/***/ }),
+
 /***/ "@material-ui/icons/BarChart":
 /*!**********************************************!*\
   !*** external "@material-ui/icons/BarChart" ***!
@@ -3742,6 +3865,17 @@ module.exports = require("@material-ui/icons/Phone");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/icons/School");
+
+/***/ }),
+
+/***/ "@material-ui/icons/Translate":
+/*!***********************************************!*\
+  !*** external "@material-ui/icons/Translate" ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/Translate");
 
 /***/ }),
 

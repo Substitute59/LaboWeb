@@ -123,6 +123,19 @@ const styles = theme => ({
   markdownskills: {
     fontSize: 11,
   },
+  hobby: {
+    textAlign: 'center',
+    padding: 10,
+  },
+  hobbyicon: {
+    color: green[500],
+  },
+  hobbytitle: {
+    fontSize: 12,
+    [theme.breakpoints.up('md')]: {
+      fontSize: 14,
+    },
+  },
   skillko: {
     textAlign: 'center',
   },
@@ -182,9 +195,24 @@ const styles = theme => ({
       paddingLeft: 50,
     },
   },
+  markdownxp: {
+    wordBreak: 'break-all',
+  },
   socialicon: {
     height: 24,
     color: '#000',
+    [theme.breakpoints.down('sm')]: {
+      marginRight: 10,
+    },
+  },
+  contacttxt: {
+    wordBreak: 'break-all',
+    [theme.breakpoints.down('sm')]: {
+      padding: 0,
+      '& > span': {
+        fontSize: 13,
+      },
+    },
   },
 });
 

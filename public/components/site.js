@@ -45,7 +45,7 @@ class Site extends React.Component {
                 paper: classes.drawerPaper,
               }}
             >
-              <DrawerContent classes={classes} hp={hp} strapiUrl={strapiUrl} handleDrawerToggle={this.handleDrawerToggle} />
+              <DrawerContent classes={classes} lang={lang} hp={hp} strapiUrl={strapiUrl} handleDrawerToggle={this.handleDrawerToggle} />
             </Drawer>
           </Hidden>
           <Hidden smDown implementation="css">
@@ -56,7 +56,7 @@ class Site extends React.Component {
               variant="permanent"
               open
             >
-              <DrawerContent classes={classes} hp={hp} strapiUrl={strapiUrl} />
+              <DrawerContent classes={classes} lang={lang} hp={hp} strapiUrl={strapiUrl} />
             </Drawer>
           </Hidden>
         </nav>
@@ -72,7 +72,7 @@ class Site extends React.Component {
             </IconButton>
           </div>
           <Home classes={classes} hp={hp} strapiUrl={strapiUrl} />
-          <About classes={classes} hp={hp} hobbies={hobbies} />
+          <About classes={classes} hp={hp} lang={lang} hobbies={hobbies} />
           <Skills classes={classes} hp={hp} lang={lang} domains={domains} skills={skills} strapiUrl={strapiUrl} />
           <Work classes={classes} hp={hp} lang={lang} projects={projects} />
           <Experience classes={classes} hp={hp} lang={lang} experiences={experiences} strapiUrl={strapiUrl} />

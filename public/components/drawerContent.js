@@ -12,6 +12,7 @@ import TrendingUpIcon from '@material-ui/icons/TrendingUp';
 import SchoolIcon from '@material-ui/icons/School';
 import EmailIcon from '@material-ui/icons/Email';
 import DescriptionIcon from '@material-ui/icons/Description';
+import TranslateIcon from '@material-ui/icons/Translate';
 
 class DrawerContent extends React.Component {
   closeDrawer = () => {
@@ -21,7 +22,7 @@ class DrawerContent extends React.Component {
   };
 
   render() {
-    const { classes, hp, strapiUrl } = this.props;
+    const { classes, hp, strapiUrl, lang } = this.props;
 
     return (
       <div>
@@ -73,12 +74,18 @@ class DrawerContent extends React.Component {
           </List>
         </ScrollspyNav>
         <Divider/>
-        <List>
+        <List className={classes.nav}>
           <ListItem button component="a" href={strapiUrl + hp.CV.url} className={classes.navlink} target="_blank">
             <ListItemIcon>
               <DescriptionIcon className={classes.navicon} />
             </ListItemIcon>
             <ListItemText classes={{ primary: classes.navlinktext }} primary="CV" />
+          </ListItem>
+          <ListItem button component="a" href={lang === 'en' ? '/index' : '/en'} className={classes.navlink}>
+            <ListItemIcon>
+              <TranslateIcon className={classes.navicon} />
+            </ListItemIcon>
+            <ListItemText classes={{ primary: classes.navlinktext }} primary={lang === 'en' ? 'French / Français' : 'Anglais / English'} />
           </ListItem>
         </List>
       </div>

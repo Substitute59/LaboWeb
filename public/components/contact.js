@@ -24,34 +24,34 @@ class Contact extends React.Component {
               <ListItemIcon className={classes.socialicon}>
                 <EmailIcon />
               </ListItemIcon>
-              <ListItemText primary={hp.Email} />
+              <ListItemText className={classes.contacttxt} primary={hp.Email} />
             </ListItem>
             <ListItem button>
               <ListItemIcon className={classes.socialicon}>
                 <PhoneIcon />
               </ListItemIcon>
-              <ListItemText primary={hp['Téléphone']} />
+              <ListItemText className={classes.contacttxt} primary={hp['Téléphone']} />
             </ListItem>
             <ListItem button component="a" href={hp.Twitter} target="_blank">
               <ListItemIcon className={classes.socialicon}>
                 <Icon path={mdiTwitterCircle}
                   size={1} />
               </ListItemIcon>
-              <ListItemText primary={hp.Twitter} />
+              <ListItemText className={classes.contacttxt} primary={hp.Twitter} />
             </ListItem>
             <ListItem button component="a" href={hp.Github} target="_blank">
               <ListItemIcon className={classes.socialicon}>
                 <Icon path={mdiGithubCircle}
                   size={1} />
               </ListItemIcon>
-              <ListItemText primary={hp.Github} />
+              <ListItemText className={classes.contacttxt} primary={hp.Github} />
             </ListItem>
             <ListItem button component="a" href={hp.LinkedIn} target="_blank">
               <ListItemIcon className={classes.socialicon}>
                 <Icon path={mdiLinkedin}
                   size={1} />
               </ListItemIcon>
-              <ListItemText primary={hp.LinkedIn} />
+              <ListItemText className={classes.contacttxt} primary={hp.LinkedIn} />
             </ListItem>
           </List>
         </Paper>
