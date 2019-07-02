@@ -28,7 +28,7 @@ En.getInitialProps = async function () {
   const resSkills = await fetch(`${strapiUrl}/competences?_sort=Ordre:ASC`);
   const skills = await resSkills.json();
   // projets
-  const resProjects = await fetch(`${strapiUrl}/projets?_sort=Ordre:ASC`);
+  const resProjects = await fetch(`${strapiUrl}/works?_sort=Ordre:ASC`);
   const projects = await resProjects.json();
   // expériences
   const resExperiences = await fetch(`${strapiUrl}/experiences?_sort=Ordre:ASC`);

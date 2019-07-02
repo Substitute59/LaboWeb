@@ -26,8 +26,8 @@ class Work extends React.Component {
     };
   }
 
-  toggleGallery = () => {
-    this.setState({ open: !this.state.open });
+  toggleGallery = (index = false) => {
+    this.setState({ open: index });
   };
 
   getProject = project => {
@@ -44,9 +44,9 @@ class Work extends React.Component {
         <div className={classes.projecttitle}>{project.Titre}</div>
         <ReactMarkdown source={lang === 'en' ? project['Description courte anglais'] : project['Description courte']} className={classes.markdowwork} />
         <Dialog
-          onClose={this.toggleGallery}
+          onClose={() => this.toggleGallery()}
           aria-labelledby="dialog-title"
-          open={this.state.open}
+          open={this.state.open === project.Ordre}
         >
           <DialogTitle disableTypography id="dialog-title" className={classes.modalheader}>
             {project.Titre}
@@ -60,7 +60,7 @@ class Work extends React.Component {
             </Carousel>
           </DialogContent>
           <DialogActions className={classes.modalactions}>
-            <Button onClick={this.toggleGallery} className={classes.modalbutton}>
+            <Button onClick={() => this.toggleGallery()} className={classes.modalbutton}>
               {lang === 'en' ? 'Close' : 'Fermer'}
             </Button>
           </DialogActions>
@@ -70,7 +70,7 @@ class Work extends React.Component {
         <IconButton href={project.Lien} target="_blank">
           <LaunchIcon />
         </IconButton>
-        <IconButton onClick={this.toggleGallery}>
+        <IconButton onClick={() => this.toggleGallery(project.Ordre)}>
           <PhotoLibraryIcon />
         </IconButton>
       </CardActions>

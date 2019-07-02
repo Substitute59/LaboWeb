@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2001,8 +2001,10 @@ function (_React$Component) {
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Work).call(this, props));
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "toggleGallery", function () {
+      var index = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+
       _this.setState({
-        open: !_this.state.open
+        open: index
       });
     });
 
@@ -2049,9 +2051,11 @@ function (_React$Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Dialog__WEBPACK_IMPORTED_MODULE_18___default.a, {
-        onClose: _this.toggleGallery,
+        onClose: function onClose() {
+          return _this.toggleGallery();
+        },
         "aria-labelledby": "dialog-title",
-        open: _this.state.open,
+        open: _this.state.open === project.Ordre,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 46
@@ -2104,7 +2108,9 @@ function (_React$Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_22___default.a, {
-        onClick: _this.toggleGallery,
+        onClick: function onClick() {
+          return _this.toggleGallery();
+        },
         className: classes.modalbutton,
         __source: {
           fileName: _jsxFileName,
@@ -2133,7 +2139,9 @@ function (_React$Component) {
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_15___default.a, {
-        onClick: _this.toggleGallery,
+        onClick: function onClick() {
+          return _this.toggleGallery(project.Ordre);
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 73
@@ -3468,7 +3476,7 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
         case 23:
           skills = _context.sent;
           _context.next = 26;
-          return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_8___default()("".concat(strapiUrl, "/projets?_sort=Ordre:ASC"));
+          return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_8___default()("".concat(strapiUrl, "/works?_sort=Ordre:ASC"));
 
         case 26:
           resProjects = _context.sent;
@@ -3834,7 +3842,7 @@ var styles = function styles(theme) {
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

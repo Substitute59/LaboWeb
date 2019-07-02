@@ -1,0 +1,41 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "work",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Titre": {
+      "default": "",
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "Description courte": {
+      "default": "",
+      "type": "text"
+    },
+    "Description courte anglais": {
+      "default": "",
+      "type": "text"
+    },
+    "Lien": {
+      "default": "",
+      "type": "string"
+    },
+    "Image": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "Ordre": {
+      "default": "",
+      "type": "integer"
+    }
+  }
+}
