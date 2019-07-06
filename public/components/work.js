@@ -37,7 +37,7 @@ class Work extends React.Component {
     return <Card>
       <CardMedia
         className={classes.projectimg}
-        image={strapiUrl + project.Image[project.Image.length - 1].url}
+        image={strapiUrl + project.Cover.url}
         title={project.Titre}
       />
       <CardContent>

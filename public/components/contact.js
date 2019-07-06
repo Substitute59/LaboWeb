@@ -26,7 +26,7 @@ class Contact extends React.Component {
               </ListItemIcon>
               <ListItemText className={classes.contacttxt} primary={hp.Email} />
             </ListItem>
-            <ListItem button>
+            <ListItem button component="a" href={`tel:${hp['Téléphone']}`} target="_blank">
               <ListItemIcon className={classes.socialicon}>
                 <PhoneIcon />
               </ListItemIcon>

@@ -363,6 +363,9 @@ function (_React$Component) {
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9___default.a, {
         button: true,
+        component: "a",
+        href: "tel:".concat(hp['Téléphone']),
+        target: "_blank",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 29
@@ -2022,7 +2025,7 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_12___default.a, {
         className: classes.projectimg,
-        image: strapiUrl + project.Image[project.Image.length - 1].url,
+        image: strapiUrl + project.Cover.url,
         title: project.Titre,
         __source: {
           fileName: _jsxFileName,

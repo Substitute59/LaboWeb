@@ -1,6 +1,6 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "work",
   "info": {
     "name": "work",
     "description": ""
@@ -36,6 +36,12 @@
     "Ordre": {
       "default": "",
       "type": "integer"
+    },
+    "Cover": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
     }
   }
 }
